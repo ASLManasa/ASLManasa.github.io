@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Quantum Computing</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Introduction</a></li>
+							<li><a href="generic.html">Education</a></li>
+							<li><a href="elements.html">Achievements</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/a-s-l-manasa-ba8b371bb/" class="fab fa-linkedin"><span class="label"></span></a></li>
+							<li><a href="https://mail.google.com/mail/u/0/?tab=cm" class="fas fa-envelope-square"><span class="label"></span></a></li>
+							<li><a href="https://github.com/ASLManasa" class="fab fa-github"><span class="label"></span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<section class="post">
+								<header class="major">
+									<h1>Deadlock <br></h1>
+									<h2>An Undesirable State of a Computer</h2>
+								</header>
+								<p> Performance is the main parameter we refer to while opting for any algorithm that increases utilization of resources by the Operating System and also sees that our system would not end at some unsafe state. Handling multiple tasks at the same time is what we want in this advanced era. So executing multiple tasks simultaneously using multiple processors for multiprocessing purposes, the concept of multiprogramming and many more have been developed from generation to generation so that the overall performance of the system can be increased. Every process needs resources to fulfill the needs required for its execution. Resources can be devices (tape, disk, drives, channels, card readers, etc.), processors, storage media, programs, and data (tables, files, etc.).Here the resources can either be allocated by the operating system or the user itself by programming</p>
+								<p>Consider a scenario where the processes got the required resources that they want for execution and none of them are sharing the same resource for its execution then there is no issue, we can complete the execution of all processes, CPU utilization is increased and the system will be in a safe state. If you consider another scenario where one process is holding some resources and waiting for some other resource which is being held by another process that is been waiting for some resource held by another process and so on then we are placed in a situation where none of the processes can be executed as neither is ready to release the resource they are holding nor get allocated with the resource they are waiting for.</p>
+								<br>
+								<p>Let us understand this by example, consider the processes P1 and P2 and resources R1 and R2, now consider that R1 is allocated to P1 and R2 is allocated to P2. We take the case where both the resources are needed for both the processes for completing their tasks. Now here comes a situation where P1 wants R2 resource held by P2 and P2 wants resource R1 which is held by P1 and this state of the system is termed as the Resources Vs Deadlock Communication.<br>
+								Deadlock state of the system. When the system is in a deadlock state the processes are not executed which is not desirable. So it is indeed important to understand how the deadlock occurs and how to prevent it so that our system will stay in a safe state and maintain the desired performance by the user.</p>
+
+								<p>If  deadlocks occurs it affects the throughput of the system.
+								A deadlock needs to be resolved timely because if not resolved, the deadlock size will increase with the deadlock persistence time as more processes will be trapped in the deadlock where a deadlock size is defined as the total number of blocked processes (BP) involved in deadlock, where BP is the process that waits indefinitely on other processes</p>
+							<center><img src="images\deadlockimg.png"></center>
+							<p>Conditions for a Deadlock:<br> There are four conditions that need to happen all at the same time for a deadlock to occur.<br>
+
+							<ul>
+							<li><b>Mutual Exclusion:</b> It is a condition when only  one process can access the critical section at an instance of time. </li>
+							<li><b>Hold and Wait:</b> It is a condition where one process is holding the resource while the other process is waiting for it.</li>
+							<li><b>No-Preemptive:</b> It is a condition where no interruption can happen while one process is taking place.</li>
+							<li><b>Circular Wait:</b> It is a condition where one process is holding the resource that is needed by the next process.</li>
+						</ul>
+						<br>
+						<p><b>How to deal with deadlocks:</b><br>
+						 Deadlock resolution involves breaking existing wait-for dependencies between the processes to resolve the deadlock. It involves rolling back one or more deadlocked processes and assigning their resources to blocked processes </p>
+						<h2> <p>Safe State & Unsafe State:<br></h2>
+						 A state is safe if the system can allocate resources to each process (up to its maximum, of course) in some order and still avoid a deadlock. Otherwise, if a state is unsafe and a safe sequence does not exist, which may lead to deadlock. </p>
+						 <h2>Banker’s Algorithm</h2>
+						 <p>The Bank Algorithm gets its name because it is a way for bankers to ensure that when they borrow resources they will be able to satisfy all their clients. (Banks will not borrow a small amount of money to start building a house unless they are assured that they will be able to borrow the rest of the money to complete the house.)</p>
+						<p>When a process starts up, it must state in advance the maximum allocation of resources it may request, up to the amount available on the system. When a request is made, the scheduler determines whether granting the request would leave the system in a safe state. If not, then the process must wait until the request can be granted safely.</p>
+						<p>The banker's algorithm relies on several key data structures: ( where n is the number of processes and m is the number of resource categories. )<br>
+						<ol><li> Available[ m ] indicates how many resources are currently available of each type.</li>
+						<li>    Max[ n ][ m ] indicates the maximum demand of each process of each resource.</li>
+						<li>     Allocation[ n ][ m ] indicates the number of each resource category allocated to each process.</li>
+						<li>     Need[ n ][ m ] indicates the remaining resources needed of each type for each process. ( Note that Need[ i ][ j ] = Max[ i ][ j ] - Allocation[ i ][ j ] for all i, j. )</li></ol></p>
+							Reference:<br>
+					<ul>
+					<li>	[1]	Deadlock: a problem of computer systems - Seema Payal , Ruchi Taneja, M.Tech. Scholar, ECE Department, PPIMT, Hisar, India, Asst. Prof., ECE Department, PPIMT, Hisar, India - International Journal of Advanced Research in Computer Science and Software Engineering - Volume 5, Issue 8, August 2015.</li>
+
+<li>[2] An Enhanced Dining Philosophers’ Model for Deadlock - Onuodu Friday Eleonu, Okunka Chinwe Beatrice and Nlerum Promise Anebo, American Journal of Engineering Research (AJER), Volume-9, Issue-4, pp-260-271</li>
+
+<li>[3] The Deadlock Problem: An Overview Sreekaanth S. Isloor∗ T. Anthony Marsland University of Alberta</li>
+
+<li>[4] Deadlock Resolution Techniques: An Overview Pooja Chahar, Surjeet Dalal,
+International Journal of Scientific and Research Publications, Volume 3, Issue 7, July 2013 1 ISSN 2250-3153 www.ijsrp.org </li>
+
+<li>[5]Different Deadlock Handling Strategies in Distributed Environment Dr. Deepti Malhotra Department of Computer Science & IT & Central University of Jammu, Jammu and Kashmir, India </li>
+<li>[6]SHOSHA.XL A.; AND COFFMAN. E. G. "Prevention, detection, and recovery from system deadlocks." In Proc. ~th Annual Princeton Conj. on .Information Sciences all Systems, March 1970. (See also Computer Science Lab. Technical Report No. 80, Department of Electrical Engineering. Princeton University, 1969.)</li>
+
+						</ul>
+
+
+
+
+
+
+
+
+
+								
+					
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
