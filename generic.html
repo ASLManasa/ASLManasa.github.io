@@ -5,294 +5,300 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Education</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style type="text/css">
-			*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-}
+<head>
+  <title>Education</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style type="text/css">
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
-.timeline {
-  position: relative;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 15px 0;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+    }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background: #006E51;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1px;
-}
+    .timeline {
+      position: relative;
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 15px 0;
+    }
 
-.container {
-  padding: 15px 30px;
-  position: relative;
-  background: inherit;
-  width: 50%;
-}
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background: #006E51;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
 
-.container.left {
-  left: 0;
-}
+    .container {
+      padding: 15px 30px;
+      position: relative;
+      background: inherit;
+      width: 50%;
+    }
 
-.container.right {
-  left: 50%;
-}
+    .container.left {
+      left: 0;
+    }
 
-.container::after {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: calc(50% - 8px);
-  right: -8px;
-  background: #ffffff;
-  border: 2px solid #006E51;
-  border-radius: 16px;
-  z-index: 1;
-}
+    .container.right {
+      left: 50%;
+    }
 
-.container.right::after {
-  left: -8px;
-}
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: calc(50% - 8px);
+      right: -8px;
+      background: #ffffff;
+      border: 2px solid #006E51;
+      border-radius: 16px;
+      z-index: 1;
+    }
 
-.container::before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  top: calc(50% - 1px);
-  right: 8px;
-  background: #006E51;
-  z-index: 1;
-}
+    .container.right::after {
+      left: -8px;
+    }
 
-.container.right::before {
-  left: 8px;
-}
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      top: calc(50% - 1px);
+      right: 8px;
+      background: #006E51;
+      z-index: 1;
+    }
 
-.container .date {
-  position: absolute;
-  display: inline-block;
-  top: calc(50% - 8px);
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #006E51;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 1;
-}
+    .container.right::before {
+      left: 8px;
+    }
 
-.container.left .date {
-  right: -90px;
-}
+    .container .date {
+      position: absolute;
+      display: inline-block;
+      top: calc(50% - 8px);
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #006E51;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 1;
+    }
 
-.container.right .date {
-  left: -90px;
-}
+    .container.left .date {
+      right: -90px;
+    }
 
-.container .icon {
-  position: absolute;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding: 9px 0;
-  top: calc(50% - 20px);
-  background: #F6D155;
-  border: 2px solid #006E51;
-  border-radius: 40px;
-  text-align: center;
-  font-size: 18px;
-  color: #006E51;
-  z-index: 1;
-}
+    .container.right .date {
+      left: -90px;
+    }
 
-.container.left .icon {
-  right: 56px;
-}
+    .container .icon {
+      position: absolute;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      padding: 9px 0;
+      top: calc(50% - 20px);
+      background: #F6D155;
+      border: 2px solid #006E51;
+      border-radius: 40px;
+      text-align: center;
+      font-size: 18px;
+      color: #006E51;
+      z-index: 1;
+    }
 
-.container.right .icon {
-  left: 56px;
-}
+    .container.left .icon {
+      right: 56px;
+    }
 
-.container .content {
-  padding: 30px 90px 30px 30px;
-  background: #F6D155;
-  position: relative;
-  border-radius: 0 500px 500px 0;
-}
+    .container.right .icon {
+      left: 56px;
+    }
 
-.container.right .content {
-  padding: 30px 30px 30px 90px;
-  border-radius: 500px 0 0 500px;
-}
+    .container .content {
+      padding: 30px 90px 30px 30px;
+      background: #F6D155;
+      position: relative;
+      border-radius: 0 500px 500px 0;
+    }
 
-.container .content h2 {
-  margin: 0 0 10px 0;
-  
-  font-weight: normal;
-  color: #006E51;
-}
+    .container.right .content {
+      padding: 30px 30px 30px 90px;
+      border-radius: 500px 0 0 500px;
+    }
 
-.container .content p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
+    .container .content h2 {
+      margin: 0 0 10px 0;
 
-@media (max-width: 767.98px) {
-  .timeline::after {
-    left: 90px;
-  }
+      font-weight: normal;
+      color: #006E51;
+    }
 
-  .container {
-    width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
-  }
+    .container .content p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
 
-  .container.right {
-    left: 0%;
-  }
+    @media (max-width: 767.98px) {
+      .timeline::after {
+        left: 90px;
+      }
 
-  .container.left::after, 
-  .container.right::after {
-    left: 82px;
-  }
+      .container {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+      }
 
-  .container.left::before,
-  .container.right::before {
-    left: 100px;
-    border-color: transparent #006E51 transparent transparent;
-  }
+      .container.right {
+        left: 0%;
+      }
 
-  .container.left .date,
-  .container.right .date {
-    right: auto;
-    left: 15px;
-  }
+      .container.left::after,
+      .container.right::after {
+        left: 82px;
+      }
 
-  .container.left .icon,
-  .container.right .icon {
-    right: auto;
-    left: 146px;
-  }
+      .container.left::before,
+      .container.right::before {
+        left: 100px;
+        border-color: transparent #006E51 transparent transparent;
+      }
 
-  .container.left .content,
-  .container.right .content {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
-  }
-}
-		</style>
+      .container.left .date,
+      .container.right .date {
+        right: auto;
+        left: 15px;
+      }
 
-	</head>
-	<body class="is-preload">
+      .container.left .icon,
+      .container.right .icon {
+        right: auto;
+        left: 146px;
+      }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      .container.left .content,
+      .container.right .content {
+        padding: 30px 30px 30px 90px;
+        border-radius: 500px 0 0 500px;
+      }
+    }
+  </style>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Education</a>
-					</header>
+</head>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Introduction</a></li>
-							<li><a href="generic.html">Education</a></li>
-              <li><a href="project.html">Projects</a></li>
-							<li><a href="elements.html">Achievements</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/a-s-l-manasa-ba8b371bb/" class="fab fa-linkedin"><span class="label"></span></a></li>
-							<li><a href="https://mail.google.com/mail/u/0/?tab=cm" class="fas fa-envelope-square"><span class="label"></span></a></li>
-							<li><a href="https://github.com/ASLManasa" class="fab fa-github"><span class="label"></span></a></li>
-						</ul>
-					</nav>
+<body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- Wrapper -->
+  <div id="wrapper">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<span class="date">June 17, 2021</span>
-									<h1>Education Qualification<br/></h1>
-									
-								<div class="timeline">
-  <div class="timeline">
-  <div class="container right">
-    <div class="date">june 2021</div>
-    <i class="icon fa fa-running"></i>
-    <div class="content">
-      <h4>Bachelor's in CSE</h4>
-      <p>
-        
-         8.98 Cgpa (upto 4th sem)<br>
-        Pursuing from Amrita Vishwa Vidhyapeetham<br>
-        	Computer Science and Engineering<br>
-      </p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="date">May 2019</div>
-    <i class="icon fa fa-cog"></i>
-    <div class="content">
-      <h4>Intermediate</h4>
-      <p>
-        	Scored 9.65 Cgpa<br>
-         Completed from Ascent Junior College<br>
-        	Mathematics, Physics, Chemistry<br>
-      </p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="date">june 2017 </div>
-    <i class="icon fa fa-certificate"></i>
-    <div class="content">
-      <h4>Central board Secondary Education</h4>
-      <p>
-        <p>
-        	Scored 9.8 Cgpa<br>
-        	Completed from DAV pubic School<br>
-        	All Subjects<br>
-      </p>
-    </div>
-  </div>
-</div>
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo">Education</a>
+    </header>
 
-				
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="links">
+        <li class="active"><a href="index.html">Introduction</a></li>
+        <li><a href="generic.html">Education</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="elements.html">Achievements</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/a-s-l-manasa-ba8b371bb/" class="fab fa-linkedin"><span
+              class="label"></span></a></li>
+        <li><a href="https://mail.google.com/mail/u/0/?tab=cm" class="fas fa-envelope-square"><span
+              class="label"></span></a></li>
+        <li><a href="https://github.com/ASLManasa" class="fab fa-github"><span class="label"></span></a></li>
+      </ul>
+    </nav>
 
-	</body>
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Post -->
+      <section class="post">
+        <header class="major">
+          <span class="date">June 17, 2021</span>
+          <h1>Education Qualification<br /></h1>
+
+          <div class="timeline">
+            <div class="timeline">
+              <div class="container right">
+                <div class="date">june 2021</div>
+                <i class="icon fa fa-running"></i>
+                <div class="content">
+                  <h4>Bachelor's in CSE</h4>
+                  <p>
+
+                    8.95 Cgpa (upto 5th sem)<br>
+                    Pursuing from Amrita Vishwa Vidhyapeetham<br>
+                    Computer Science and Engineering<br>
+                  </p>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="date">May 2019</div>
+                <i class="icon fa fa-cog"></i>
+                <div class="content">
+                  <h4>Intermediate</h4>
+                  <p>
+                    Scored 9.65 Cgpa<br>
+                    Completed from Ascent Junior College<br>
+                    Mathematics, Physics, Chemistry<br>
+                  </p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="date">june 2017 </div>
+                <i class="icon fa fa-certificate"></i>
+                <div class="content">
+                  <h4>Central board Secondary Education</h4>
+                  <p>
+                    <p>
+                      Scored 9.8 Cgpa<br>
+                      Completed from DAV pubic School<br>
+                      All Subjects<br>
+                    </p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
